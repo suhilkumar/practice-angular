@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practiceangular';
+  value = '';
+  getValue(event: any): void {
+    console.log(event.target.value)
+    this.value = event.target.value;
+  }
 }
